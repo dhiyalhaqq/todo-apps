@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- Support for the older IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo webapps</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <header>
+      <h1>Todo webapps</h1>
+    </header>
+
+    <input type="text" id="addTodoTextInput" onkeypress="todoButtons.addTodo()" placeholder="Add new todo" maxlength="80" title="Input for new todos" autofocus>
+      
+    <div>
+      <button onclick="todoButtons.toggleAll()" title="Toggles all todos">Toggle All</button>
+      <button onclick="todoButtons.deleteAll()" title="Deletes all todos">Delete All</button>
+    </div>
+    
+      <ul>
+      </ul>
+    
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>
